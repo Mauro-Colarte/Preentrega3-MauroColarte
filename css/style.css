@@ -1,0 +1,213 @@
+/*!-----FONTS_FUENTE------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*!----------RESET-------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/*!--------BODY-----------*/
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: rgb(245, 234, 226);
+}
+
+/*!----------HEADER--------*/
+header {
+    background-color: rgb(245, 234, 226);
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h1 {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 8px;
+    padding: 2px;
+    text-align: center;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: 
+    rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+/*!--------MAIN------------*/
+.boton {
+    background-color: #202020;
+    color: white;
+}
+/**-------------Index---------------*/
+.hero {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: white;
+    background-image: url(../IMG/IMAGENES/Bar_Entrada.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.hero h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 40px;
+}
+.hero a {
+    border-radius: black;
+    color: #202020;
+    font-size: 20px;
+}
+
+.map {
+    background-color: #202020;
+text-align: center;
+
+
+}
+.map h2 a {
+    color: white;
+    align-items: 20px;
+}
+
+.map img {
+    height: 70px;
+    width: 80px;
+    margin-left: 20px;
+}
+
+.history{
+
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.history img {
+    width: 300px;
+    height: 500px;
+    border: 2px solid white;
+    margin-top:30px;
+}
+.history p {
+    background-position: 100vh;
+    padding: 40px;
+    margin: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height:1.9;
+}
+
+/**-------------Reserva-------------*/
+
+.Form {
+    color: rgb(221, 221, 95);
+    text-align: center;
+    padding: 10%;
+    margin: 10px;
+}
+
+/**-------------RRHH----------------*/
+
+.RRHH {
+    color: rgb(221, 221, 95);
+    text-align: center;
+    padding: 8px;
+    margin: 20px;
+}
+
+/**-------------SUCURSALES----------*/
+.mapa_sucursales {
+    display: block;
+}
+
+.mapa_sucursales h2 {
+    color: rgb(221, 221, 95);
+    text-align: center;
+}
+
+
+.mapa_sucursales div iframe {
+    width: 40%; /* Ajusta el ancho */
+    height: 380px; /* Ajusta la altura */
+    border: none; /* Elimina el borde del iframe */
+    position: relative;
+    margin-left: 30%;
+    margin-top: 30px;    
+    padding-bottom: 30px;
+}
+/**-------------CONTACTO----------------*/
+.Contacto{
+    color: white;
+    margin: 20px;
+
+}
+
+.Contacto h2 {
+    color: yellow;
+    display: flex;
+    justify-content: left;
+    margin: 10px
+}
+
+.Contacto p{
+    line-height: 30px;
+}
+
+.Contacto form{
+    display: flex;
+    justify-content: center;
+    flex-flow:column w;
+    line-height: 29px;
+}
+
+/**-------------MENU----------------*/
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu img {
+    width:600px;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+/*!--------FOOTER-----------*/
+footer {
+    display: flex;
+    height: 87px;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    justify-content:left;
+    align-items: center;
+    padding-left: 60px;
+
+}
+footer div ul img{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+    padding: 4px;
+
+}
+
+.footerSucursales {
+    bottom: 0;
+}
