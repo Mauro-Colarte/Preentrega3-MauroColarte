@@ -12,20 +12,23 @@
 /*!--------BODY-----------*/
 body {
     font-family: "Raleway", sans-serif;
-    background-color: rgb(245, 234, 226);
+    background-color: rgb(27, 27, 26);
 }
 
 /*!----------HEADER--------*/
 header {
-    background-color: rgb(245, 234, 226);
+    background-color: rgb(27, 27, 26);
     display: flex;
     Flex-wrap: wrap;
     justify-content: space-around;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
 }
 
 h1 {
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(199, 196, 196);
     font-size: 40px;
     padding: 10px;
     text-align: center;
@@ -39,16 +42,14 @@ header nav ul li {
 }
 header nav ul li a {
     text-decoration: none;
-    color: 
-    rgb(0, 0, 0);
+    color: rgb(199, 196, 196);
     font-size: 17px;
+    padding-top: 10px;
+
 }
 
 /*!--------MAIN------------*/
-.boton {
-    background-color: #202020;
-    color: white;
-}
+
 /**-------------Index---------------*/
 .hero {
     width: 100%;
@@ -57,8 +58,9 @@ header nav ul li a {
     color: white;
     background-image: url(../IMG/IMAGENES/Bar_Entrada.jpg);
     background-position: center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .hero h2 {
@@ -66,49 +68,63 @@ header nav ul li a {
     text-align: center;
     padding-top: 40px;
 }
-.hero a {
-    border-radius: black;
-    color: #202020;
+.boton {
+    display: flex;
+    background-color: #131212;
+    color: rgb(193, 197, 201);
+    border-radius: 7px;
     font-size: 20px;
-}
-
-.map {
-    background-color: #202020;
-text-align: center;
-
-
-}
-.map h2 a {
-    color: white;
-    align-items: 20px;
-}
-
-.map img {
-    height: 70px;
-    width: 80px;
-    margin-left: 20px;
+    padding: 6px;
 }
 
 .history{
-
-    padding-left: 60px;
-    margin-bottom: 40px;
+    display: flex;
 }
 
 .history img {
-    width: 300px;
+    padding: 30px;
+    margin-top: 52px;
+    float: left;
+    width: 600px;
     height: 500px;
-    border: 2px solid white;
-    margin-top:30px;
 }
 .history p {
-    background-position: 100vh;
-    padding: 40px;
-    margin: 40px;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+    justify-content: right;
+    padding: 70px;
+    color: rgb(199, 194, 194);
+    font-size: 17px;
     line-height:1.9;
 }
+
+.grids-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    /*! habilitamos Filas*/
+    grid-template-rows: 250px 250px 250px;
+    grid-gap: 20px;
+
+    /*! habilitamos columnas */
+    grid-template-columns: repeat(3,1fr)
+}
+
+.grids-items{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cuarto{
+    grid-row-start: span 2;
+}
+
+.sexto{
+    grid-row-start: span 2;
+}
+
 
 /**-------------Reserva-------------*/
 
@@ -149,28 +165,45 @@ text-align: center;
     padding-bottom: 30px;
 }
 /**-------------CONTACTO----------------*/
-.Contacto{
+div label {
+    background-color: #04AA6D;
+    color:white;
+    padding: 4px;
+    border-radius: 5px;
+}
+input[type=text], select, textarea {
+    width: 40%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
     color: white;
-    margin: 20px;
-
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.Contacto h2 {
-    color: yellow;
-    display: flex;
-    justify-content: left;
-    margin: 10px
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
 }
-
-.Contacto p{
-    line-height: 30px;
+input[type=submit]:hover {
+    background-color: #45a049;
+  /* Add a background color and some padding around the form */
 }
-
-.Contacto form{
-    display: flex;
-    justify-content: center;
-    flex-flow:column w;
-    line-height: 29px;
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 /**-------------MENU----------------*/
@@ -186,6 +219,17 @@ text-align: center;
     margin-bottom: 50px;
     margin-top: 30px;
 }
+.cerveza-promo {
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+.cerveza-promo img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    border: solid yellow;
+}
 
 /*!--------FOOTER-----------*/
 footer {
@@ -195,14 +239,20 @@ footer {
     width: 100%;
     background-color: #333;
     color: white;
-    justify-content:left;
+    justify-content: space-between;
     align-items: center;
     padding-left: 60px;
-
+    padding-right: 30px;
 }
+
+footer div ul h3 {
+    margin-bottom: 6px;
+    text-align: center;
+}
+
 footer div ul img{
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     margin-right: 20px;
     padding: 4px;
 
@@ -211,3 +261,15 @@ footer div ul img{
 .footerSucursales {
     bottom: 0;
 }
+
+.map {
+    display: flex;
+    justify-content:right;
+    }
+
+.map h2 a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    align-items: 20px;
+    text-align: end;
+    }
