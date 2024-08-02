@@ -1,84 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------BOOTSTAP------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-------CSS------->
+    <link rel="stylesheet" href="../css/style.css">
     <title>Reserva</title>
-        <!--*STYLE CSS-->
-        <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
+        <img src="../img/logos/logo-simbar.png" alt="">
         <h1>Bienvenido a SimBar</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./Menu.html">Menu</a>
-                </li>
-                <!--Enlace Interno-->
-                <li>
-                    <a href="./Contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./RRHH.html">Trabaja con Nosotros</a>
-                </li>
-                <li>
-                    <a href="./Sucursales.html">Sucursales</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./RRHH.html">RRHH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Sucursales.html">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <form action="" method="" enctype="" class="Form">
-            <div>
-                <label for="Nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="Apellido" id="Apellido">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-        <div>
-            <p>Sucursal a la que quieres ir?</p>
-            <select name="Sucursal" id="Sucursal"> Sucursal
-                <option value="">SimBar Puerto Madero</option>
-                <option value="">SimBar Costanera</option>
-            </select>
+        <div class="box-reserva">
+            <form action="" method="" enctype="">
+                <h2>Tu Reserva</h2>
+                <div class="box-style-reserva">
+                    <div class="box-palabras">
+                        <label for=" Nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="box-palabras">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido">
+                    </div>
+                    <div class="box-palabras">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="box-sucursal">
+                        <p>Sucursal a la que quieres ir?</p>
+                        <select name="Sucursal" id="Sucursal">
+                            <option value="">Elige una Opción</option>
+                            <option value="">SimBar Puerto Madero</option>
+                            <option value="">SimBar Costanera</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Escribi tu Comentario, sobre algo que deberiamos tener en cuenta!</label>
+                    </div>
+                    <textarea name="" id="" cols="55" rows="7"></textarea>
+                    <div class="box-palabras">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </div>
+            </form>
         </div>
-
-            <div>
-                <label for="">Escribi tu Comentario, sobre algo que deberiamos tener en cuenta!</label>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../img/imagenes/img-bar-prox.jpg" alt="Bar-Proximamente-Palermo" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>SimBar Palermo</h1>
+                    <p>Bar/Restaurante Nocturno</p>
+                    <p>Proximamente...</p>
+                    <p>(Fecha de posible apertura 01/12/24)</p>
+                </div>
             </div>
-            <textarea name="" id="" cols="30" rows="10">
-            </textarea>
-            <div>
-                <input type="submit">
-                <input type="reset">
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../img/imagenes/img-bar-Costanera.jpg" alt="Bar-de-Costanera" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>SimBar Costanera</h1>
+                    <p>Bar/Restaurante Nocturno</p>
+                </div>
             </div>
-        </form>
-    </main>     
-<footer id="Contactos">
-    <div>
-        <ul>
-            <h3>Contactos</h3>
-            <a href="https://www.facebook.com" target="_blank"><img src="../img/LOGOS/facebook.png" alt="HardRockBar en facebook" ></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="../img/LOGOS/instagram.png" alt="HardRockBar en Instagram" ></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="../img/LOGOS/youtube.png" alt="HardRockBar en Youtube" ></a>
-            <a href="https://api.whatsapp.com/send?phone=541162440205&text=Hola!%20Necesito%20reserva%20un%20lugar%F0%9F%8D%BB" target="_blank"> <img src="../IMG/LOGOS/whatsapp.png" alt="mensaje de whatsapp" ></a>
-        </ul>
-    </div>
-    <section class="map">
-        <h2>
-            <a href="./pages/Sucursales.html">Nuestras Sucursales</a>
-        </h2>
-    </section>
-</footer>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../img/imagenes/img-bar-Puerto Madero.jpg" alt="Bar-de-PuertoMadero" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>SimBar Puerto Madero</h1>
+                    <p>Bar/Restaurante Nocturno</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footersucursales" id="Contactos">
+        <div class="footer-flex">
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <ul>
+                    <li>Domigo a Jueves de 12 pm - 2 am</li>
+                </ul>
+                <ul>
+                    <li>Viernes y Sabado de 12 pm - 3:30 am</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h3>Nuestras Redes, seguinos!</h3>
+                <a href="https://www.facebook.com" target="_blank"><img src="../img/LOGOS/facebook.png"
+                        alt="HardRockBar en facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../img/LOGOS/instagram.png"
+                        alt="HardRockBar en Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="../img/LOGOS/youtube.png"
+                        alt="HardRockBar en Youtube"></a>
+                <a href="https://api.whatsapp.com/send?phone=541162440205&text=Hola!%20Necesito%20reserva%20un%20lugar%F0%9F%8D%BB"
+                    target="_blank"><img src="../IMG/LOGOS/whatsapp.png" alt="mensaje de whatsapp"></a>
+            </div>
+            <div class="footer-contacto">
+                <h3>
+                    <a href="./Sucursales.html">Nuestras Sucursales</a>
+                </h3>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

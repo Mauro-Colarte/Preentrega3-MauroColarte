@@ -1,76 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recursos Humanos</title>
-            <!--*STYLE CSS-->
-            <link rel="stylesheet" href="../css/style.css">
+
+    <!-------BOOTSTAP------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-------CSS------->
+    <link rel="stylesheet" href="../css/style.css">
+    ><title>Recursos Humanos</title>
 </head>
+
 <body>
     <header>
+        <img src="../img/logos/logo-simbar.png" alt="">
         <h1>Bienvenido a SimBar</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./Menu.html">Menu</a>
-                </li>
-                <!--Enlace Interno-->
-                <li>
-                    <a href="./Contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./RRHH.html">Trabaja con Nosotros</a>
-                </li>
-                <li>
-                    <a href="./Sucursales.html">Sucursales</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./RRHH.html">RRHH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Sucursales.html">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <form action="" method="" enctype="" class="RRHH">
-            <div>
-                <label for="Nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="Apellido">Apellido:</label>
-                <input type="text" name="Apellido" id="Apellido">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="">Carta de Presentacion: </label>
-            </div>
-            <textarea name="" id="" cols="40" rows="8"></textarea>
-            <div>
-                <input type="submit">
-                <input type="reset">
-            </div>
-        </form>
+        <div class="form-recursos-humanos">
+            <form action="" method="" enctype="">
+                <h2>Ingresa todos tus Datos</h2>
+                <div class="data-rrhh">
+                    <div class="data-form-rrhh">
+                        <label for="Nombre"> Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu Nombre">
+                    </div>
+                    <div class="data-form-rrhh">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Escribe tu Apellido">
+                    </div>
+                    <div class="data-form-rrhh">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="data-form-rrhh">
+                        <label for="genero">Genero:</label> <br>
+                    </div>
+                    <div class="form-genero">
+                        <label for="masculono">Masculino</label>
+                        <input type="radio" name="genero" id="genero">
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="genero">
+                        <label for="otro">Otro</label>
+                        <input type="radio" name="genero" id="genero">
+                    </div>
+                    <div class="data-form-rrhh">
+                        <label for="estudios">Nivel de Estudio</label><br>
+                        <input type="checkbox" name="no-estudios" id="estudios">No tiene Estudios
+                        <input type="checkbox" name="estudio-primario" id="estudios">Primario
+                        <input type="checkbox" name="estudios-secundario" id="estudios">Secundario
+                        <input type="checkbox" name="estudios-universidad" id="estudios">Universitario
+                    </div>
+                    <div class="data-form-rrhh">
+                        <label for="archivo">Deja tu Cv:(Archivo PDF)</label>
+                        <input type="file" name="archivo" id="archivo" ><br>
+                        <input type="submit" name="enviar" id="enviar">
+                        <input type="reset" name="reseteo" id="reseteo">
+                    </div>
 
+                </div>
+            </form>
+        </div>
     </main>
-    <footer id="Contactos">
-        <div>
-            <ul>
-                <h3>Contactos</h3>
-                <a href="https://www.facebook.com" target="_blank"><img src="../img/LOGOS/facebook.png" alt="HardRockBar en facebook" ></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="../img/LOGOS/instagram.png" alt="HardRockBar en Instagram" ></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="../img/LOGOS/youtube.png" alt="HardRockBar en Youtube" ></a>
-                <a href="https://api.whatsapp.com/send?phone=541162440205&text=Hola!%20Necesito%20reserva%20un%20lugar%F0%9F%8D%BB" target="_blank"> <img src="../IMG/LOGOS/whatsapp.png" alt="mensaje de whatsapp" ></a>
-            </ul>
+    <footer class="footersucursales" id="Contactos">
+        <div class="footer-flex">
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <ul>
+                    <li>Domigo a Jueves de 12 pm - 2 am</li>
+                </ul>
+                <ul>
+                    <li>Viernes y Sabado de 12 pm - 3:30 am</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <h3>Nuestras Redes, seguinos!</h3>
+                <a href="https://www.facebook.com" target="_blank"><img src="../img/LOGOS/facebook.png"
+                        alt="HardRockBar en facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../img/LOGOS/instagram.png"
+                        alt="HardRockBar en Instagram"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="../img/LOGOS/youtube.png"
+                        alt="HardRockBar en Youtube"></a>
+                <a href="https://api.whatsapp.com/send?phone=541162440205&text=Hola!%20Necesito%20reserva%20un%20lugar%F0%9F%8D%BB"
+                    target="_blank"><img src="../IMG/LOGOS/whatsapp.png" alt="mensaje de whatsapp"></a>
+            </div>
+            <div class="footer-contacto">
+                <h3>
+                    <a href="./Sucursales.html">Nuestras Sucursales</a>
+                </h3>
+            </div>
         </div>
     </footer>
-    <section class="map">
-        <h2>
-            <a href="./pages/Sucursales.html">Nuestras Sucursales</a>
-        </h2>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
