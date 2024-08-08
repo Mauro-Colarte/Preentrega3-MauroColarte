@@ -1,0 +1,134 @@
+@media screen and (max-width:1300px) {
+    .history {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .history p {
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .menu {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    .menu img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header h1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    .grids-container {
+        grid-template-rows: 250px 250px 250px;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .primero {
+        display: none;
+    }
+
+    .cuarto {
+        grid-row-start: span 1;
+    }
+
+    .sexto {
+        grid-row-start: span 1;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horarios h3 {
+        font-size: 15px;
+    }
+
+    .horarios ul li {
+        font-size: 12px;
+    }
+
+    .redes h3 {
+        font-size: 15px;
+    }
+
+    .redes img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer-contacto h3 a {
+        color: #050505;
+        font-size: 18px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .form-recursos-humanos {
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width:755px) {
+    .data-contact {
+        width: 400px;
+
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .form-recursos-humanos {
+        font-size: 10px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .history img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .box-reserva {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .form-recursos-humanos {
+        font-size: 9px;
+    }
+
+    .form-recursos-humanos form h2 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:433px) {
+    .form-recursos-humanos {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .data-contact {
+        width: 300px;
+        font-size: 11px;
+    }
+}

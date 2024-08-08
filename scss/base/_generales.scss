@@ -1,0 +1,54 @@
+//! FONTS_FUENTE
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+//! RESET
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+//! BODY
+body {
+    font-family: "Raleway", sans-serif;
+    background-color:rgba(0, 0, 0, 0.89);
+}
+
+//! BOOTSTRAP
+.carousel {
+    .tamano {
+        .carousel-item {
+            img {
+                object-fit: cover;
+                height: 500px !important;
+                width: 100% !important;
+                align-content: center !important;
+                padding: 20px !important;
+                border-radius: 50px !important;
+            }
+        }
+    }
+}
+
+//! VARIALBLES
+
+$color-header:rgb(245, 245, 245);
+$color-letras:#050505;
+$color-reserva-form:rgba(0, 183, 255, 0.63);
+$color-footerback:rgba(255, 252, 252, 0.836);
+
+
+//! EXTENDS
+
+%flex{
+    display: flex;
+    justify-content: center;
+}
+
+//! MIXINS
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

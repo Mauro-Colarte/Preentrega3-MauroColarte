@@ -1,0 +1,57 @@
+//FOOTER
+.footersucursales {
+    height: 100%;
+    width: 100%;
+    background-color: $color-footerback;
+    color: #050505;
+    padding-left: 60px;
+    padding-right: 30px;
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        .horarios {
+
+            h3 {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            ul {
+                li {    font-size: 16px;}
+            }
+        }
+
+        .redes {
+            h3 {
+                font-size: 23px;
+                text-align: center;
+            }
+
+            a {
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    margin-right: 20px;
+                    padding: 4px;
+                }
+            }
+        }
+
+        .footer-contacto {
+            display: flex;
+            justify-content: right;
+            h3 {
+                a {
+                    color: #050505;
+                    font-size: 24px;
+                    align-items: 20px;
+                    text-align: end;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
