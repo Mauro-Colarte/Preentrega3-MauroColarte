@@ -11,23 +11,24 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-------CSS------->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Sucursales</title>
 </head>
 
 <body>
     <header>
         <img src="../img/logos/logo-simbar.png" alt="">
-        <h1>Bienvenido a SimBar</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./Menu.html">Menu</a>
                         </li>
@@ -47,11 +48,18 @@
     </header>
     <main>
         <section class="mapa_sucursales">
-            <h2>Nuestras Sucursales</h2>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/d/u/0/embed?mid=18qd1ZYhBfyqRkQqjOBEqU-33HblkKAU&ehbc=2E312F&noprof=1"></iframe>
-            </div>
+            <h2>
+                <span>
+                    Nuestras Sucursales
+                </span>
+            </h2>
+        </section>
+        <div class="maps-simbar">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.902962256772!2d-73.9635859!3d40.676106999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ba1192e5f8f%3A0xd22289bfcd170570!2s732%20Washington%20Ave%2C%20Brooklyn%2C%20NY%2011238%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1723837508437!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer class="footersucursales" id="Contactos">
         <div class="footer-flex">

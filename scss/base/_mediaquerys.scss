@@ -10,6 +10,36 @@
     }
 }
 
+@media screen and (max-width: 1230px) {
+    .menu .dos-por-uno {
+        width: 420px;
+        height: 500px;
+    }
+
+    .menu .lunes-pizza {
+        width: 420px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .grids-galery-menu .flex-galery-menu .galery-dos {
+        width: 80%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-tres {
+        width: 80%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cuatro {
+        width: 80%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cinco {
+        width: 80%;
+    }
+}
+
 @media screen and (max-width: 1075px) {
     .menu {
         grid-template-rows: auto;
@@ -23,8 +53,24 @@
     }
 }
 
+@media screen and (max-width: 1055px) {
+    .lineal-reserva {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lineal-reserva .flip-card {
+        margin-bottom: 10px;
+    }
+
+}
+
 @media screen and (max-width: 991px) {
     header h1 {
+        display: none;
+    }
+
+    header h2 {
         display: none;
     }
 }
@@ -53,24 +99,24 @@
         flex-direction: column;
     }
 
-    .horarios h3 {
+    .footersucursales .footer-flex .horarios h3 {
         font-size: 15px;
     }
 
-    .horarios ul li {
-        font-size: 12px;
+    .footersucursales .footer-flex .horarios ul li {
+        font-size: 18px;
     }
 
-    .redes h3 {
-        font-size: 15px;
+    .footersucursales .footer-flex .redes h3 {
+        font-size: 22px;
     }
 
-    .redes img {
+    .footersucursales .footer-flex .redes a img {
         height: 30px;
         width: 30px;
     }
 
-    .footer-contacto h3 a {
+    .footersucursales .footer-flex .footer-contacto h3 a {
         color: #050505;
         font-size: 18px;
         align-items: center;
@@ -78,13 +124,39 @@
 }
 
 @media screen and (max-width: 920px) {
+    .grids-galery-menu .flex-galery-menu .galery-uno {
+        transition: none;
+    }
+
     .form-recursos-humanos {
         font-size: 12px;
 
     }
 }
 
+@media screen and (max-width: 860px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .dos-por-uno {
+        width: 350px;
+        height: 450px;
+    }
+
+    .menu .lunes-pizza {
+        width: 350px;
+        height: 450px;
+    }
+}
+
 @media screen and (max-width:755px) {
+    .grids-galery-menu .flex-galery-menu .galery-uno img {
+        display: none;
+    }
+
     .data-contact {
         width: 400px;
 
@@ -98,15 +170,153 @@
     }
 }
 
+@media screen and (max-width:700px) {
+    .grids-galery-menu .flex-galery-menu .galery-dos {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-dos h3 {
+        font-size: 20px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-dos p {
+        font-size: 15px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-dos img {
+        float: none;
+        width: 200px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-tres {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-tres h3 {
+        font-size: 20px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-tres p {
+        font-size: 15px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-tres img {
+        float: none;
+        width: 200px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cuatro {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cuatro h3 {
+        font-size: 20px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cuatro p {
+        font-size: 15px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cuatro img {
+        float: none;
+        width: 200px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cinco {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cinco h3 {
+        font-size: 20px;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cinco p {
+        font-size: 15px;
+        height: 100%;
+    }
+
+    .grids-galery-menu .flex-galery-menu .galery-cinco img {
+        float: none;
+        width: 200px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .galery-dos img {
+        display: flex;
+        flex-direction: wrap;
+        justify-content: center;
+    }
+
+    .galery-tres img {
+        float: none;
+    }
+
+    .galery-cuantro img {
+        float: none;
+    }
+
+    .galery-cinco img {
+        float: none;
+    }
+
+}
+
 @media screen and (max-width: 600px) {
     .history img {
         display: none;
     }
 }
 
+@media screen and (max-width: 580px) {}
+
+@media screen and (max-width: 560px) {
+    .top-menu h2 span {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .box-reserva {
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .form-contacto h2 {
+        text-align: center;
+    }
+
+    .form-contacto .data-contact {
+        width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .menu .dos-por-uno {
+        width: 270px;
+        height: 350px;
+    }
+
+    .menu .lunes-pizza {
+        width: 270px;
+        height: 350px;
     }
 }
 
@@ -120,6 +330,18 @@
     }
 }
 
+@media screen and (max-width: 450px) {
+    .lineal-reserva .flip-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .lineal-reserva .flip-card .flip-card-inner .flip-card-front img {
+        width: 248px !important;
+        height: 248px !important;
+    }
+}
+
 @media screen and (max-width:433px) {
     .form-recursos-humanos {
         font-size: 7px;
@@ -130,5 +352,50 @@
     .data-contact {
         width: 300px;
         font-size: 11px;
+    }
+
+    .box-reserva form .box-style-reserva{
+        width: 280px;
+        
+    }
+
+    .footersucursales .footer-flex .horarios {
+        margin-bottom: 5px;
+    }
+
+}
+
+.footersucursales .footer-flex .horarios h3 {
+    font-size: 19px;
+}
+
+.footersucursales .footer-flex .horarios ul li {
+    font-size: 15px;
+}
+
+.footersucursales .footer-flex .redes h3 {
+    font-size: 16px;
+}
+
+.footersucursales .footer-flex .redes a img {
+    height: 28px;
+    width: 28px;
+}
+
+.footersucursales .footer-flex .footer-contacto h3 a {
+    font-size: 19px;
+}
+
+@media screen and (max-width:410px){
+    .form-contacto .data-contact {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width:380px) {
+    .footersucursales .footer-flex .horarios ul li {
+        font-size: 13px;
     }
 }

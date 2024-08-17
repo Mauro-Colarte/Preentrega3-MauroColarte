@@ -6,36 +6,38 @@
     color: #050505;
     padding-left: 60px;
     padding-right: 30px;
+
     .footer-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-decoration: none;
+
         .horarios {
 
             h3 {
-                font-size: 22px;
+                font-size: 30px;
                 text-align: center;
             }
 
             ul {
-                li {    font-size: 16px;}
+                li {
+                    font-size: 16px;
+                }
             }
         }
 
         .redes {
-            h3 {
-                font-size: 23px;
+            h4 {
+                font-size: 24px;
                 text-align: center;
             }
 
             a {
-
                 img{
-                    height: 40px;
-                    width: 40px;
-                    margin-right: 20px;
-                    padding: 4px;
+                    height: 100px;
+                    width: 20px;
+                    margin-left: 30px;
                 }
             }
         }
@@ -43,10 +45,11 @@
         .footer-contacto {
             display: flex;
             justify-content: right;
+
             h3 {
                 a {
                     color: #050505;
-                    font-size: 24px;
+                    font-size: 10px;
                     align-items: 20px;
                     text-align: end;
                     text-decoration: none;

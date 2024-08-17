@@ -11,23 +11,25 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-------CSS------->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Reserva</title>
 </head>
 
 <body>
     <header>
         <img src="../img/logos/logo-simbar.png" alt="">
-        <h1>Bienvenido a SimBar</h1>
+        <h2>Bienvenido a SimBar</h2>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./Menu.html">Menu</a>
                         </li>
@@ -46,21 +48,28 @@
         </nav>
     </header>
     <main>
+        <section class="back-reserva">
+            <h2>
+                <span>
+                    Tu Reserva
+                </span>
+            </h2>
+        </section>
         <div class="box-reserva">
             <form action="" method="" enctype="">
-                <h2>Tu Reserva</h2>
+
                 <div class="box-style-reserva">
                     <div class="box-palabras">
                         <label for=" Nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                     </div>
                     <div class="box-palabras">
                         <label for="Apellido">Apellido</label>
-                        <input type="text" name="Apellido" id="Apellido">
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Apellido">
                     </div>
                     <div class="box-palabras">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="Email">
                     </div>
                     <div class="box-sucursal">
                         <p>Sucursal a la que quieres ir?</p>
@@ -70,10 +79,8 @@
                             <option value="">SimBar Costanera</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="">Escribi tu Comentario, sobre algo que deberiamos tener en cuenta!</label>
-                    </div>
-                    <textarea name="" id="" cols="55" rows="7"></textarea>
+
+                    <textarea name="" id="" cols="45" rows="7" placeholder="Mensaje"></textarea>
                     <div class="box-palabras">
                         <input type="submit">
                         <input type="reset">
