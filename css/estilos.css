@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ body {
   padding: 20px !important;
   border-radius: 50px !important; }
 
-.box-in, .back-reserva h2, .form-recursos-humanos, .form-contacto {
+.box-in, .back-reserva h2, .form-contacto {
   display: flex;
   justify-content: center; }
 
@@ -183,24 +184,65 @@ header {
         color: white;
         transform: rotateY(180deg); }
 
-.form-recursos-humanos {
+.formulario {
+  display: flex;
+  height: 100%;
+  justify-content: center;
   align-items: center;
-  min-height: 420px;
-  margin: 15vh;
-  color: #fafafa; }
-  .form-recursos-humanos form .data-rrhh {
-    background-color: rgba(36, 107, 51, 0.466);
-    padding: 20px;
-    border-radius: 18px;
-    text-align: center; }
-    .form-recursos-humanos form .data-rrhh .data-form-rrhh {
-      margin-bottom: 20px; }
-      .form-recursos-humanos form .data-rrhh .data-form-rrhh label {
-        background-color: rgba(0, 0, 0, 0.342);
-        padding: 5px;
-        border-radius: 30px; }
-    .form-recursos-humanos form .data-rrhh .form-genero label {
-      flex-direction: column; }
+  margin: 20px 0px 20px 0px; }
+  .formulario .box-form {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px; }
+    .formulario .box-form .box-label .class-form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .formulario .box-form .box-label .class-form h2 {
+        font-size: 25px;
+        font-weight: 900;
+        position: relative;
+        text-align: center; }
+      .formulario .box-form .box-label .class-form h2::before {
+        content: "";
+        position: absolute;
+        left: 38%;
+        bottom: 0;
+        height: 3px;
+        width: 230px;
+        background: #ab5bbb93; }
+      .formulario .box-form .box-label .class-form p {
+        text-align: center; }
+      .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles {
+          margin: 20px 0 12px 0;
+          width: 49%; }
+          .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles label {
+            font-weight: 500;
+            margin-bottom: 1px; }
+          .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .input-fix {
+            height: 45px;
+            width: 100%; }
+          .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .orden-estudio .check-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; }
+          .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files {
+            margin-left: 30px;
+            width: 100%; }
+        .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .puesto {
+          width: 100% !important; }
+      .formulario .box-form .box-label .class-form .data-rrhh .box-send {
+        width: 100%;
+        text-align: center; }
+      .formulario .box-form .box-label .class-form .data-rrhh .datos {
+        width: 100%;
+        text-align: center; }
 
 .mapa_sucursales {
   width: 100%;
@@ -490,7 +532,13 @@ header {
     flex-direction: column;
     align-items: center; }
   .lineal-reserva .flip-card {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .formulario .box-form {
+    max-width: 800px; }
+  .formulario .box-form .box-label .class-form h2:before {
+    display: none; }
+  .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .orden-estudio .check-box {
+    flex-direction: column; } }
 
 @media screen and (max-width: 991px) {
   header h1 {
@@ -528,9 +576,7 @@ header {
 
 @media screen and (max-width: 920px) {
   .grids-galery-menu .flex-galery-menu .galery-uno {
-    transition: none; }
-  .form-recursos-humanos {
-    font-size: 12px; } }
+    transition: none; } }
 
 @media screen and (max-width: 860px) {
   .menu {
@@ -544,15 +590,21 @@ header {
     width: 350px;
     height: 450px; } }
 
+@media screen and (max-width: 845px) {
+  .formulario .box-form {
+    max-width: 650px; } }
+
 @media screen and (max-width: 755px) {
   .grids-galery-menu .flex-galery-menu .galery-uno img {
     display: none; }
   .data-contact {
     width: 400px; } }
 
-@media screen and (max-width: 715px) {
-  .form-recursos-humanos {
-    font-size: 10px; } }
+@media screen and (max-width: 725px) {
+  .formulario .box-form .box-label .class-form {
+    flex-wrap: none; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .puesto input {
+    width: 45% !important; } }
 
 @media screen and (max-width: 700px) {
   .grids-galery-menu .flex-galery-menu .galery-dos {
@@ -606,7 +658,13 @@ header {
   .grids-galery-menu .flex-galery-menu .galery-cinco img {
     float: none;
     width: 200px;
-    height: 100%; } }
+    height: 100%; }
+  .formulario .box-form {
+    max-width: 600px; } }
+
+@media screen and (max-width: 660px) {
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .datos textarea {
+    width: 300px; } }
 
 @media screen and (max-width: 622px) {
   .galery-dos img {
@@ -618,7 +676,9 @@ header {
   .galery-cuantro img {
     float: none; }
   .galery-cinco img {
-    float: none; } }
+    float: none; }
+  .formulario .box-form {
+    max-width: 450px; } }
 
 @media screen and (max-width: 600px) {
   .history img {
@@ -630,14 +690,36 @@ header {
 
 @media screen and (max-width: 550px) {
   .box-reserva {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh {
+    display: flex;
+    flex-direction: column;
+    justify-content: left; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles {
+    width: 100%; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .puesto input {
+    width: 100% !important; } }
 
 @media screen and (max-width: 530px) {
   .form-contacto h2 {
     text-align: center; }
   .form-contacto .data-contact {
     width: 400px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .formulario .box-form {
+    max-width: 350px; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .datos textarea {
+    width: 200px; }
+  .formulario .box-form .box-label .class-form h2 {
+    font-size: 20px;
+    text-align: start; }
+  .formulario .box-form .box-label .class-form p {
+    font-size: 10px;
+    text-align: start; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files input {
+    width: 300px; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh {
+    width: 90%; } }
 
 @media screen and (max-width: 470px) {
   .menu .dos-por-uno {
@@ -648,10 +730,9 @@ header {
     height: 350px; } }
 
 @media screen and (max-width: 465px) {
-  .form-recursos-humanos {
-    font-size: 9px; }
-  .form-recursos-humanos form h2 {
-    font-size: 19px; } }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files label,
+  input {
+    font-size: 12px; } }
 
 @media screen and (max-width: 450px) {
   .lineal-reserva .flip-card {
@@ -660,10 +741,6 @@ header {
   .lineal-reserva .flip-card .flip-card-inner .flip-card-front img {
     width: 248px !important;
     height: 248px !important; } }
-
-@media screen and (max-width: 433px) {
-  .form-recursos-humanos {
-    font-size: 7px; } }
 
 @media screen and (max-width: 430px) {
   .data-contact {
@@ -697,4 +774,17 @@ header {
 
 @media screen and (max-width: 380px) {
   .footersucursales .footer-flex .horarios ul li {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files input {
+    width: 200px; }
+  .formulario .box-form {
+    max-width: 250px; }
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .genero {
+    font-size: 15px; }
+  .formulario .box-form .box-label .class-form p {
+    font-size: 9px; } }
+
+@media screen and (max-width: 360px) {
+  .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files label,
+  input {
+    font-size: 10px; } }

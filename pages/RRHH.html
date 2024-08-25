@@ -12,7 +12,7 @@
 
     <!-------CSS------->
     <link rel="stylesheet" href="../css/estilos.css">
-    ><title>Recursos Humanos</title>
+    <title>Recursos Humanos</title>
 </head>
 
 <body>
@@ -47,51 +47,99 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="form-recursos-humanos">
-            <form action="" method="" enctype="">
-                <h2>Ingresando tus datos tenes la posibilidad de sumarte a nuestro equipo!</h2>
-                <div class="data-rrhh">
-                    <div class="data-form-rrhh">
-                        <label for="Nombre"> Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu Nombre">
-                    </div>
-                    <div class="data-form-rrhh">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Escribe tu Apellido">
-                    </div>
-                    <div class="data-form-rrhh">
-                        <label for="Email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                    <div class="data-form-rrhh">
-                        <label for="genero">Genero:</label> <br>
-                    </div>
-                    <div class="form-genero">
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" name="genero" id="genero">
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" name="genero" id="genero">
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="genero" id="genero">
-                    </div>
-                    <div class="data-form-rrhh">
-                        <label for="estudios">Nivel de Estudio</label><br>
-                        <input type="checkbox" name="no-estudios" id="estudios">No tiene Estudios
-                        <input type="checkbox" name="estudio-primario" id="estudios">Primario
-                        <input type="checkbox" name="estudios-secundario" id="estudios">Secundario
-                        <input type="checkbox" name="estudios-universidad" id="estudios">Universitario
-                    </div>
-                    <div class="data-form-rrhh">
-                        <label for="archivo">Deja tu Cv:(Archivo PDF)</label>
-                        <input type="file" name="archivo" id="archivo" ><br>
-                        <input type="submit" name="enviar" id="enviar">
-                        <input type="reset" name="reseteo" id="reseteo">
-                    </div>
+    <Main>
+        <section class="formulario">
+            <div class="box-form">
+                <div class="box-label">
+                    <form action="" method="" enctype="" class="class-form">
+                        <h2>Trabaja en Simbar!</h2>
+                        <p>¡Sumate a nuestro equipo, te estamos esperando!</p>
+                        <div class="data-rrhh">
+                            <div class="data-form-rrhh">
+                                <div class="box-detalles">
+                                    <label for="Nombre"> Nombre:</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu Nombre"
+                                        class="input-fix">
+                                </div>
+                                <div class="box-detalles">
+                                    <label for="apellido">Apellido:</label>
+                                    <input type="text" name="apellido" id="apellido" placeholder="Escribe tu Apellido"
+                                        class="input-fix">
+                                </div>
+                                <div class="box-detalles mail">
+                                    <label for="Email">Email:</label>
+                                    <input type="email" name="email" id="email" placeholder="Email" class="input-fix">
+                                </div>
+                                <div class="box-detalles puesto">
+                                    <label for="puesto">Puesto:</label>
+                                    <input type="position" name="position" id="position"
+                                        placeholder="Posición a la que aplicas" class="input-fix">
+                                </div>
+                                <div class="box-detalles genero">
+                                    <label for="genero">Genero:</label>
+                                    <ul>
+                                        <li>
+                                            <label for="masculino">Masculino</label>
+                                            <input type="radio" name="genero" id="genero">
+                                        </li>
+                                        <li>
+                                            <label for="femenino">Femenino</label>
+                                            <input type="radio" name="genero" id="genero">
+                                        </li>
+                                        <li>
+                                            <label for="otro">Otro</label>
+                                            <input type="radio" name="genero" id="genero">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-detalles">
+                                    <div class="orden-estudio">
+                                        <div class="level-label">
+                                            <label for="estudios">Nivel de Estudio</label>
+                                        </div>
+                                        <div class="check-box">
+                                            <div>
+                                                <input type="checkbox" class="check-btn" name="no-estudios"
+                                                    id="estudios">No
+                                                tiene Estudios
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" class="check-btn" name="estudio-primario"
+                                                    id="estudios">Primario
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" class="check-btn" name="estudios-secundario"
+                                                    id="estudios">Secundario
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" class="check-btn" name="estudios-universidad"
+                                                    id="estudios">Universitario
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="datos">
+                                    <label for="comentario">Escribi tu comentario:</label><br>
+                                    <textarea "name="textarea" id="textarea" cols="70" rows="7"></textarea>
+                                </div>
+                                <div class="box-detalles">
+                                    <div class="send-files">
+                                        <label for="archivo">Deja tu Cv:(Archivo PDF)</label>
+                                        <input type="file" name="archivo" id="archivo">
+                                    </div>
+                                </div>
+
+                                <div class="box-send">
+                                    <input type="submit" name="enviar" id="enviar">
+                                    <input type="reset" name="reseteo" id="reseteo">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </div>
-    </main>
+            </div>
+        </section>
+    </Main>
     <footer class="footersucursales" id="Contactos">
         <div class="footer-flex">
             <div class="horarios">

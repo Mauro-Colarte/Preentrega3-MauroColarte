@@ -63,6 +63,18 @@
         margin-bottom: 10px;
     }
 
+    .formulario .box-form {
+        max-width: 800px;
+    }
+
+    .formulario .box-form .box-label .class-form h2:before {
+        display: none;
+
+    }
+
+    .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .orden-estudio .check-box {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -127,11 +139,6 @@
     .grids-galery-menu .flex-galery-menu .galery-uno {
         transition: none;
     }
-
-    .form-recursos-humanos {
-        font-size: 12px;
-
-    }
 }
 
 @media screen and (max-width: 860px) {
@@ -152,6 +159,12 @@
     }
 }
 
+@media screen and (max-width: 845px) {
+    .formulario .box-form {
+        max-width: 650px;
+    }
+}
+
 @media screen and (max-width:755px) {
     .grids-galery-menu .flex-galery-menu .galery-uno img {
         display: none;
@@ -163,10 +176,13 @@
     }
 }
 
-@media screen and (max-width: 715px) {
-    .form-recursos-humanos {
-        font-size: 10px;
+@media screen and (max-width: 725px) {
+    .formulario .box-form .box-label .class-form {
+        flex-wrap: none;
+    }
 
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .puesto input {
+        width: 45% !important;
     }
 }
 
@@ -254,6 +270,16 @@
         width: 200px;
         height: 100%;
     }
+
+    .formulario .box-form {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .datos textarea {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 622px) {
@@ -275,6 +301,9 @@
         float: none;
     }
 
+    .formulario .box-form {
+        max-width: 450px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -295,6 +324,20 @@
     .box-reserva {
         font-size: 10px;
     }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles{
+        width: 100%;
+    }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .puesto input {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 530px) {
@@ -305,6 +348,32 @@
     .form-contacto .data-contact {
         width: 400px;
         margin-bottom: 20px;
+    }
+
+    .formulario .box-form {
+        max-width: 350px;
+    }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .datos textarea {
+        width: 200px;
+    }
+
+    .formulario .box-form .box-label .class-form h2 {
+        font-size: 20px;
+        text-align: start;
+    }
+
+    .formulario .box-form .box-label .class-form p {
+        font-size: 10px;
+        text-align: start;
+    }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files input{
+        width: 300px;
+    }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh{
+        width: 90%;
     }
 }
 
@@ -321,12 +390,10 @@
 }
 
 @media screen and (max-width: 465px) {
-    .form-recursos-humanos {
-        font-size: 9px;
-    }
 
-    .form-recursos-humanos form h2 {
-        font-size: 19px;
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files label,
+    input {
+        font-size: 12px;
     }
 }
 
@@ -342,11 +409,7 @@
     }
 }
 
-@media screen and (max-width:433px) {
-    .form-recursos-humanos {
-        font-size: 7px;
-    }
-}
+@media screen and (max-width:433px) {}
 
 @media screen and (max-width:430px) {
     .data-contact {
@@ -354,9 +417,9 @@
         font-size: 11px;
     }
 
-    .box-reserva form .box-style-reserva{
+    .box-reserva form .box-style-reserva {
         width: 280px;
-        
+
     }
 
     .footersucursales .footer-flex .horarios {
@@ -386,7 +449,7 @@
     font-size: 19px;
 }
 
-@media screen and (max-width:410px){
+@media screen and (max-width:410px) {
     .form-contacto .data-contact {
         width: 320px;
         margin-bottom: 20px;
@@ -397,5 +460,29 @@
 @media screen and (max-width:380px) {
     .footersucursales .footer-flex .horarios ul li {
         font-size: 13px;
+    }
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files input{
+        width: 200px;
+    }
+
+    .formulario .box-form {
+        max-width: 250px;
+    }
+    
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .genero{
+        font-size: 15px;
+    }
+
+    .formulario .box-form .box-label .class-form p{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .formulario .box-form .box-label .class-form .data-rrhh .data-form-rrhh .box-detalles .send-files label,
+    input {
+        font-size: 10px;
     }
 }
